@@ -1,4 +1,4 @@
-FROM xunfeng/vllm:gptq-base
+FROM vllm
 
 
 RUN pip install accelerate tiktoken fschat
