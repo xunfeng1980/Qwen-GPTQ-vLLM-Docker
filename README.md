@@ -5,7 +5,7 @@ https://github.com/chu-tianxiang/vllm-gptq
 
 ## With Qwen Requirements
 
-## Run
+## Run(xunfeng/vllm:gptq-base-with-qwen)
 ```
 sudo docker run -d -p 8000:8000  --gpus='"device=0"' --name qwen-int4-vllm -v /data/Qwen-14B-Chat-Int4:/model/Qwen-14B-Chat-Int4 --entrypoint=python3 xunfeng/vllm:gptq-base-with-qwen   -m vllm.entrypoints.openai.api_server --model /model/Qwen-14B-Chat-Int4 --trust-remote-code --quantization gptq
 ```
